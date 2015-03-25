@@ -4,6 +4,8 @@
 
 This is a port into PHP from the original Javascript function by Richard Lord, National Physical Laboratory which can be found here: http://resource.npl.co.uk/acoustics/techguides/speedair/
 
+The php class accepts temperature and humidty as arguments, and calculates the resulting speed of sound. This calculation is helpful to people who make musical instruments, for example, where the speed of sound at various temperatures is needed to calculate the wavelength of notes.
+
 From the original introduction:
 
 > The calculator presented here computes the zero-frequency speed of sound in humid air according to Cramer (J. Acoust. Soc. Am., 93, p2510, 1993), with saturation vapour pressure taken from Davis, Metrologia, 29, p67, 1992, and a mole fraction of carbon dioxide of 0.0004.
