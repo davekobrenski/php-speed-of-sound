@@ -14,6 +14,8 @@ This PHP version accepts temperature in fahrenheit, and uses a default air press
 
 ###Usage:
 
+Include the `SpeedOfSound.php` script. You can then use it in any of these ways:
+
 Option 1:
 
 ```php
