@@ -2,7 +2,7 @@
 
 ###Calculation of speed of sound in humid air
 
-This is a port into PHP from the original Javascript function by Richard Lord, National Physical Laboratory which can be found here: http://resource.npl.co.uk/acoustics/techguides/speedair/
+This is a port into PHP from the original Javascript implementation by Richard Lord (National Physical Laboratory), which can be found here: http://resource.npl.co.uk/acoustics/techguides/speedair/
 
 ###What For?
 
