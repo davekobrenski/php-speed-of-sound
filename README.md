@@ -37,3 +37,10 @@ $speed->setEnvironment($fahrenheit, 45); //then set temp and humidity
 $speed->getSpeed();
 ```
 
+Alternately, you can also use the namespace like this:
+
+```
+use Kassa\Physics;
+$speed = new SpeedOfSound();
+$speed->getSpeed(); //etc
+```
