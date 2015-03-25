@@ -39,7 +39,7 @@ $speed->getSpeed();
 
 Alternately, you can also use the namespace like this:
 
-```
+```php
 use Kassa\Physics;
 $speed = new SpeedOfSound();
 $speed->getSpeed(); //etc
