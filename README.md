@@ -1,6 +1,6 @@
 ##Speed of Sound
 
-###Calculation of speed of sound in humid air.
+###Calculation of speed of sound in humid air
 
 This is a port into PHP from the original Javascript function by Richard Lord, National Physical Laboratory which can be found here: http://resource.npl.co.uk/acoustics/techguides/speedair/
 
@@ -10,4 +10,13 @@ From the original introduction:
 
 > Range of validity: the calculator is only valid over the temperature range 0 to 30 ° C (273.15 - 303.15 K) and for the pressure range 75 - 102 kPa
 
-This php port accepts temperature in fahrenheit, and uses a default air pressure of 101.325 kPa.
+This PHP version accepts temperature in fahrenheit, and uses a default air pressure of 101.325 kPa.
+
+###Usage:
+
+Option 1:
+
+```php
+$speed = new \Kassa\Physics\SpeedOfSound(); //using defaults for temp & humidity
+$speed->getSpeed(); //return array including temperature, humidity, and speed of sound
+```
