@@ -51,7 +51,7 @@ Alternately, you can use the namespace like this:
 ```php
 use Kassa\Physics;
 $sos = new SpeedOfSound();
-$sos->getSpeed(); //etc
+$data = $sos->getSpeed(); //etc...
 ```
 
 ###Return Values
