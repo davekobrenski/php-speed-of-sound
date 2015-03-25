@@ -15,7 +15,8 @@ namespace Kassa\Physics;
  *
  * This php port accepts temperature in fahrenheit, and uses a default air pressure of 101.325 kPa
  *
- * @author php version: Dave Kobrenski <dave@bbmdesigns.com>
+ * @author php version: Dave Kobrenski <dave@kassaflutes.com>
+ * @link http://kassaflutes.com
  * @license MIT
  */
 class SpeedOfSound
