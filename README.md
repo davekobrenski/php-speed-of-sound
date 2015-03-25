@@ -4,7 +4,7 @@
 
 This is a port into PHP from the original Javascript function by Richard Lord, National Physical Laboratory which can be found here: http://resource.npl.co.uk/acoustics/techguides/speedair/
 
-###Why?
+###What For?
 
 The php class accepts temperature and humidty as arguments, and calculates the resulting speed of sound. This calculation is helpful to people who make musical instruments, for example, where the speed of sound at various temperatures is needed to calculate the wavelength of notes.
 
