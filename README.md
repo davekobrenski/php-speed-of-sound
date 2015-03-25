@@ -44,3 +44,17 @@ use Kassa\Physics;
 $speed = new SpeedOfSound();
 $speed->getSpeed(); //etc
 ```
+
+###Return Values
+
+The calculated speed of sound is returned in cm/s.
+
+Data is returned as an array, like this:
+
+```php
+Array ( 
+  [temperature] => 68
+  [humidity] => 50
+  [speed] => 34399
+)
+```
