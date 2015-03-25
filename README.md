@@ -19,32 +19,35 @@ Include the `SpeedOfSound.php` script. You can then use it in any of these ways:
 Option 1:
 
 ```php
-$speed = new \Kassa\Physics\SpeedOfSound(); //using defaults for temp & humidity
-$speed->getSpeed(); //returns array including temperature, humidity, and speed of sound
+$sos = new \Kassa\Physics\SpeedOfSound(); //using defaults for temp & humidity
+$data = $sos->getSpeed(); //returns array including temperature, humidity, and speed of sound
+print_r($data);
 ```
 
 Option 2:
 
 ```php
-$speed = new \Kassa\Physics\SpeedOfSound(75, 40); //set temperature and humidity
-$speed->getSpeed(); //returns array including temperature, humidity, and speed of sound
+$sos = new \Kassa\Physics\SpeedOfSound(75, 40); //set temperature and humidity
+$data = $sos->getSpeed(); //returns array including temperature, humidity, and speed of sound
+print_r($data);
 ```
 
 Option 3:
 
 ```php
-$speed = new \Kassa\Physics\SpeedOfSound();
-$fahrenheit = $speed->toFahrenheit(20); //convert from celsius first
-$speed->setEnvironment($fahrenheit, 45); //then set temp and humidity
-$speed->getSpeed();
+$sos = new \Kassa\Physics\SpeedOfSound();
+$fahrenheit = $sos->toFahrenheit(20); //convert from celsius first
+$sos->setEnvironment($fahrenheit, 45); //then set temp and humidity
+$data = $sos->getSpeed();
+print_r($data);
 ```
 
-Alternately, you can also use the namespace like this:
+Alternately, you can use the namespace like this:
 
 ```php
 use Kassa\Physics;
-$speed = new SpeedOfSound();
-$speed->getSpeed(); //etc
+$sos = new SpeedOfSound();
+$sos->getSpeed(); //etc
 ```
 
 ###Return Values
@@ -60,3 +63,9 @@ Array (
   [speed] => 34399
 )
 ```
+
+Let me know if you find this useful!
+
+You can see a working example of this on the [Kassa Flutes][1] website, here: https://kassaflutes.com/flute-calc
+
+[1]:https://kassaflutes.com
