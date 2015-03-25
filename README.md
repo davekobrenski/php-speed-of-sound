@@ -18,5 +18,22 @@ Option 1:
 
 ```php
 $speed = new \Kassa\Physics\SpeedOfSound(); //using defaults for temp & humidity
-$speed->getSpeed(); //return array including temperature, humidity, and speed of sound
+$speed->getSpeed(); //returns array including temperature, humidity, and speed of sound
 ```
+
+Option 2:
+
+```php
+$speed = new \Kassa\Physics\SpeedOfSound(75, 40); //set temperature and humidity
+$speed->getSpeed(); //returns array including temperature, humidity, and speed of sound
+```
+
+Option 3:
+
+```php
+$speed = new \Kassa\Physics\SpeedOfSound();
+$fahrenheit = $speed->toFahrenheit(20); //convert from celsius first
+$speed->setEnvironment($fahrenheit, 45); //then set temp and humidity
+$speed->getSpeed();
+```
+
